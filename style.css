@@ -1,0 +1,454 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+/* h1, h2 {
+  display: block;
+  font-family: 'Londrina Shadow', cursive; */
+}
+
+/* h1.glowytext {
+  font-size: 100px;
+  color: red;
+} */
+
+p {
+  font-family: 'Londrina Solid', cursive;
+  margin: 10px 10px 20vw 20vw;
+}
+
+.tab h1 {
+  text-decoration: none;
+}
+
+h2{
+  font-family: 'Londrina Solid', cursive;
+  font-size: 200px;
+}
+
+.glowytext {
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #252853, 0 0 30px #252853, 0 0 40px #252853, 0 0 55px #252853, 0 0 75px #252853, 2px 2px 2px rgba(37,40,83,0);
+  color: #FFFFFF;
+  font-family: 'Dosis', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 100px;
+}
+
+#mainContainer {
+  background-color: purple;
+}
+
+#headerDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  width: 100vw;
+  height: 7vw;
+  margin: 20px 20px 10px 10px;
+  /* opacity: 50%; */
+  z-index: 2;
+}
+
+#LogoIcon {
+  width: 300px;
+  /* margin-left: 75px; */
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.tab {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 175px;
+  height: 75px;
+  font-family: 'Dosis', Helvetica, Arial, sans-serif;
+  font-weight:600;
+  font-size: 15px;
+  border-style: solid;
+  border-radius: 2px;
+  box-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #252853, 0 0 30px #252853, 0 0 40px #252853, 0 0 55px #252853, 0 0 75px #252853, 2px 2px 2px rgba(37,40,83,0);
+  /* padding: 15px 15px 15px 15px; */
+  -webkit-transition: -webkit-box-shadow 100ms ease-out;
+}
+
+.tab:hover {
+  -webkit-transition: -webkit-box-shadow 100ms ease-in;
+  -webkit-box-shadow: 0px 0px 15px 5px #F731B8;
+  box-shadow: 0px 0px 15px 5px #F731B8;
+}
+
+#MixtapesIcon {
+  width: 75px;
+}
+
+#heroDiv {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  /* background: linear-gradient(to bottom, black 0%, #4007A4 100%); */
+  /* background-color: black; */
+  /* background-image: url("Assets/MixtapesCollection.jpeg");
+  background-size: cover;
+  filter: blur(8px);
+  -webkit-filter: blur(8px); */
+  /* z-index: 1; */
+}
+
+.backgroundhero {
+  display: flex;
+  position: absolute;
+  background-image: url("Assets/MixtapesCollection.jpeg");
+  background-size: cover;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  width: 100vw;
+  height: 100vh;
+}
+
+#cityLights {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  object-fit: cover;
+  object-position: center;
+  /* right: 0;
+  bottom: 0; */
+  width: 100%;
+  height: 100%;
+}
+
+#herotext {
+position: absolute;
+text-align: center;
+align-self: center;
+font-size: 100px;
+}
+
+#newAlbumDiv {
+  background-color: #A2338B;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.newAlbumCoverDiv {
+  display: flex;
+  width: 50%;
+  height: 100vh;
+  justify-content: center;
+  min-height: 100vh; // height of the browser viewport
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: blue; */
+}
+
+.newAlbumCover {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  height: 35vw;
+  align-self: center;
+  position: relative;
+  justify-content: center;
+}
+
+iframe.spotify{
+  position: relative;
+  width: 100%;
+}
+
+.newAlbumTextDiv {
+  display: flex;
+  width: 50%;
+  height: auto;
+  /* background-color: red; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#newMusicVideoDiv {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 100px;
+}
+
+.newMusicVideo iframe {
+  display: flex;
+  width: 60vw;
+  height: 60vh;
+  display: flex;
+  position: relative;
+  padding: 20px 20px 20px 20px;
+}
+
+.newMusicVideo {
+  display: flex;
+  align-self: center;
+  width: 100vw;
+  height: auto;
+  position: relative;
+}
+
+.newMusicVideoTextDiv{
+  display: flex;
+  width: 50%;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 100px;
+}
+
+#accomplishmentsDiv {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+.accomplishmentsDiv h1 {
+  display: flex;
+  position: absolute;
+}
+
+#membersDiv {
+  /* background-color: black; */
+  background-image: url("Assets/purplemixtapes.png");
+  /* -webkit-filter: blur(6px); */
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.membersTitle {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-self: flex-start;
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.membersGridDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.membersgrid {
+  display: grid;
+  width: 85%;
+  height: 65%;
+  position: relative;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr 1fr 1fr 1fr 1fr;
+  padding: 10px;
+  /* grid-gap: 20px; */
+  /* align-items: stretch; */
+  }
+
+.member-grid {
+  text-align: center;
+  padding: 5px;
+}
+
+  .member-grid img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      filter: gray; /* IE5+ */
+      -webkit-filter: grayscale(1); /* https://codepen.io/codewithJahid/pen/JRPvBj?css-preprocessor=scss */
+      -webkit-transition: all .2s ease-in-out;
+  }
+
+  .member-grid img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.11);
+  }
+
+  .memberPage {
+    /* background-color: black; */
+    /* background: rgb(63,94,251); */
+    background-color: black;
+    /* background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 100%); */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .memberInfo {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 300px;
+  }
+
+  .memberPFPDiv {
+    display: flex;
+    justify-content: center;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    /* padding-left: 100px; */
+  }
+
+  .memberPFP {
+    /* max-width:75vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto; */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    /* padding-left: 250px; */
+    /* justify-content: flex-end; */
+    overflow: hidden;
+    /* filter: sepia(100%) saturate(200%) brightness(70%) hue-rotate(250deg);
+    background-image:url("Assets/Sofia Wheeler _ Members.png"); */
+  }
+
+  .memberPFP img {
+    height: 100%;
+    width: auto;
+    position: relative;
+    /* filter: grayscale(100%) sepia(100%) hue-rotate(220deg); */
+  }
+
+  .weekendpage {
+    display: flex;
+    justify-content: flex-start;
+    background-color: black;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .weekendpage iframe {
+    margin-top: 15vh;
+    display: flex;
+    height: auto;
+    width: 100%;
+  }
+
+  .purpleinfodiv {
+    display: flex;
+    position: absolute;
+    background-color: blueViolet;
+    opacity: 95%;
+    width: 75%;
+    height: 25%;
+    align-self: center;
+  }
+
+  .purpleinfodiv h1 {
+    padding-left: 50px;
+  }
+
+  .glowcircle {
+    display: flex;
+    position: absolute;
+    align-self: center;
+    /* background-color: lightblue; */
+    background: rgb(38,247,254);
+/* background: radial-gradient(circle, rgba(38,247,254,1) 0%, rgba(74,249,255,1) 75%, rgba(255,255,255,1) 100%); */
+background-image: radial-gradient(#26F7FE, #26F7FE, white);
+
+    border-radius: 50%;
+    width: 800px;
+    height: 800px;
+    box-shadow: 0px 0px 40px 20px #0ff;
+  }
+
+  .memberInfo h2 {
+    font-size: 175px;
+  }
+#Sofia img {
+  padding-left: 175px;
+}
+  #Brendan img {
+    padding-left: 400px;
+  }
+
+  .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  #herotext{
+    font-size: 200px;
+  }
+
+  #newMusicVideoDiv {
+    background-color: purple;
+  }
+
+  .membersgrid {
+    display: grid;
+    width: 65%;
+    height: 65%;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+    padding: 10px;
+    /* grid-gap: 20px; */
+    /* align-items: stretch; */
+    }
+  /* .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;} */
+}
